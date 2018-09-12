@@ -6,5 +6,8 @@ ul
   - else
     li
       = link_to('Login', new_user_session_path)
-
+    li
+      a href=user_facebook_omniauth_authorize_path Facebook Sign In
+    li
+      a href=omniauth_authorize_path('user', :google_oauth2) Google Sign In
 hr

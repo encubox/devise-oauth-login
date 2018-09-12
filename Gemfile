@@ -71,6 +71,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Additional gems
 gem 'mysql2'
 gem 'slim-rails'
+gem 'dotenv-rails'
 
 gem 'devise'
 gem 'omniauth-facebook'

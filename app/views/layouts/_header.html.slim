@@ -1,0 +1,13 @@
+ul
+  - if user_signed_in?
+    li= current_user.email
+    li
+      = link_to('Logout', destroy_user_session_path, method: :delete)
+  - else
+    li
+      = link_to('Login', new_user_session_path)
+    li
+      a href=user_facebook_omniauth_authorize_path Facebook Sign In
+    li
+      a href=omniauth_authorize_path('user', :google_oauth2) Google Sign In
+hr
